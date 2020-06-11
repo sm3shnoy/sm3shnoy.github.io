@@ -1,0 +1,223 @@
+.last-operation {
+  margin-top: 23px;
+}
+
+.last-operation-tables-group {
+  margin-top: 26px;
+}
+
+.last-operation-table-wrapper {
+  margin-top: 8px;
+
+  box-shadow: 0px 10px 30px #2F83DE33;
+  border-radius: 20px;
+  background-color: #ffffff;
+}
+
+.last-operation-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: none;
+}
+
+.last-operation-table th {
+  color: #47A9FF;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: left;
+  font-weight: 500;
+}
+
+.last-operation-table tbody tr {
+  background-color: #ffffff;
+  border-top: 1px solid #b0b8ff;
+}
+
+.last-operation-table tbody tr:first-child {
+  border-top: none;
+}
+
+.last-operation-table td {
+  padding: 30px 16px 29px;
+}
+
+/* ячейки в таблице последние операции */
+
+/* дата */
+.last-operation-table .last-operation-date {
+  width: 13.4%;
+
+  color: #47A9FF;
+  font-weight: 500;
+  
+  padding-left: 2.189%;
+}
+
+/* название */
+.last-operation-table .last-operation-name {
+  width: 26.45%;
+  padding-left: 1.984%;
+
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #233D9A;
+}
+
+/* услуга товар оплата */
+.last-operation-table .last-operation-service {
+  width: 28.19%;
+  padding-left: 3.32%;
+
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  color: #233D9A;
+
+  background-repeat: no-repeat;
+  background-position: 17px center;
+  background-size: 24px;
+}
+
+/* сумма */
+.last-operation-table .last-operation-amount {
+  width: 16.8%;
+
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 18px;
+  color: #233D9A;
+}
+
+/* повторить */
+.last-operation-table .last-operation-repeat {
+  padding-left: 49px;
+
+  color: #47A9FF;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+
+  background: url("../../img/last-operation/repeat.svg") no-repeat 17px center;
+  background-size: 24px;
+}
+
+/* заголовки */
+.last-operation-table .last-operation-date-head {
+  width: 13.4%;
+  padding: 0 2.189%;
+}
+
+.last-operation-table .last-operation-name-head {
+  width: 26.45%;
+  padding: 0 1.984%;
+}
+
+.last-operation-table .last-operation-service-head {
+  width: 28.19%;
+  padding: 0 1.642%;
+}
+
+.last-operation-table .last-operation-amount-head {
+  width: 16.8%;
+  padding-left: 1.1%;
+}
+
+/* закругление у крайних ячеек таблицы */
+.last-operation-table tbody tr:first-child td:first-child {
+  border-top-left-radius: 20px;
+}
+
+.last-operation-table tbody tr:first-child td:last-child {
+  border-top-right-radius: 20px;
+}
+
+.last-operation-table tbody tr:last-child td:first-child {
+  border-bottom-left-radius: 20px;
+}
+
+.last-operation-table tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 20px;
+}
+
+/* иконки для таблицы */
+
+.last-operation-table .last-operation-plumbing-work {
+  background-image: url("../../img/services/icon-plumbing-work.svg");
+}
+
+.last-operation-table .last-operation-electricity {
+  background-image: url("../../img/payment/icon-electricity.svg");
+}
+
+.last-operation-table .last-operation-mobile-phone {
+  background-image: url("../../img/payment/icon-mobile-phone.svg");
+}
+
+.last-operation-table .last-operation-product {
+  background-image: url("../../img/sidebar/icon-sidebar-goods.svg");
+}
+
+/* min-width: 1550px */
+@media screen and (max-width: 1919px) {
+  .last-operation-table .last-operation-service {
+    background-position: 5px center;
+  }
+}
+
+/* min-width: 1220px */
+@media screen and (max-width: 1549px) {
+  /* Таблица последние операции на главной */
+  .last-operation-table td {
+    padding: 20px 16px;
+  }
+
+  /* Ячейки с датой */
+  .last-operation-table .last-operation-date-head {
+    width: 17.4%;
+  }
+  
+  .last-operation-table .last-operation-date {
+    width: 17.4%;
+
+    font-size: 14px;
+  }
+
+  /* Ячейки с названием */
+  .last-operation-table .last-operation-name-head {
+    padding: 0 1.2%;
+  }
+
+  .last-operation-table .last-operation-name {
+    font-size: 14px;
+  }
+
+  /* Ячейки с услугами */
+  .last-operation-table .last-operation-service-head {
+    width: 26.19%;
+    padding: 0 1.2%;
+  }
+
+  .last-operation-table .last-operation-service {
+    font-size: 14px;
+
+    background-position: left center;
+    background-size: 20px;
+  }
+
+  /* Ячейки с суммой */
+  .last-operation-table .last-operation-amount-head {
+    padding-left: 0.5%;
+  }
+  
+  .last-operation .last-operation-amount {
+    font-size: 18px;
+  }
+
+  /* Ячейки с кнопкой повторить */
+  .last-operation .last-operation-repeat {
+    font-size: 14px;
+
+    background-size: 20px;
+  }
+}

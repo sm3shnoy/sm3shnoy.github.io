@@ -1,0 +1,210 @@
+/* Левый блок меню */
+.sidebar {
+  position: fixed;
+  z-index: 100;
+
+  height: 100%;
+  width: 340px;
+  padding: 35px 20px 41px 55px;
+
+  background: url("../../img/sidebar/bg/sidebar-white-figure.svg") no-repeat -7px 787px,
+              #fff url("../../img/sidebar/bg/sidebar-blue-figure.svg") no-repeat -5px 715px;
+  -webkit-box-shadow: 6px 0px 17px -4px rgba(71,169,255,0.6);
+  -moz-box-shadow: 6px 0px 17px -4px rgba(71,169,255,0.6);
+  box-shadow: 6px 0px 17px -4px rgba(71,169,255,0.6);
+}
+
+.sidebar-logo {
+  display: inline-block;
+  margin: 0 0 48px 3px;
+  
+  vertical-align: middle;
+}
+
+.main-nav {
+  display: flex;
+  flex-direction: column;
+  padding-left: 2px;
+  height: 92%;
+
+  overflow: auto;
+}
+
+.menu-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.menu-item {
+  display: flex;
+  margin-bottom: 26px;
+  padding-right: 21px;
+}
+
+/* Счетчик для отображения количества чего-нибудь, например сообщений */
+.menu-item-counter {
+  width: 24px;
+  height: 24px;
+  margin-left: auto;
+  
+  font-size: 14px;
+  text-align: center;
+  line-height: 24px;
+  font-weight: 500;
+  color: #ffffff;
+  vertical-align: middle;
+
+  background-color: #f86512;
+  border-radius: 10px;
+}
+
+.menu-link {
+  min-height: 24px;
+  padding-left: 44px;
+  max-width: 212px;
+  
+  font-size: 18px;
+  color: #003A9E;
+  line-height: 24px;
+  font-weight: 500;
+  vertical-align: middle;
+  word-break: break-word;
+}
+
+.menu-link:hover,
+.active {
+  color: #F86512;
+  font-weight: 700;
+}
+
+/* Иконка главная */
+.menu-link-main-page {
+  background: url("../../img/sidebar/icon-sidebar-main-page.svg") no-repeat left center;
+}
+
+.menu-link-main-page:hover,
+.active.menu-link-main-page {
+  background: url("../../img/sidebar/icon-sidebar-main-page-hover.svg") no-repeat left center;
+}
+
+/* Иконка оплата */
+.menu-link-payment {
+  background: url("../../img/sidebar/icon-sidebar-payment.svg") no-repeat left center;
+}
+
+.menu-link-payment:hover,
+.active.menu-link-payment {
+  background: url("../../img/sidebar/icon-sidebar-payment-hover.svg") no-repeat left center;
+}
+
+/* Иконка история операций */
+.menu-link-history {
+  background: url("../../img/sidebar/icon-sidebar-history.svg") no-repeat left center;
+}
+
+.menu-link-history:hover,
+.active.menu-link-history {
+  background: url("../../img/sidebar/icon-sidebar-history-hover.svg") no-repeat left center;
+}
+/* Иконка услуги */
+.menu-link-services {
+  background: url("../../img/sidebar/icon-sidebar-services.svg") no-repeat left center;
+}
+
+.menu-link-services:hover,
+.active.menu-link-services  {
+  background: url("../../img/sidebar/icon-sidebar-services-hover.svg") no-repeat left center;
+}
+
+/* Иконка товары */
+.menu-link-goods {
+  background: url("../../img/sidebar/icon-sidebar-goods.svg") no-repeat left center;
+}
+
+.menu-link-goods:hover,
+.active.menu-link-goods {
+  background: url("../../img/sidebar/icon-sidebar-goods-hover.svg") no-repeat left center;
+}
+
+/* Иконка мои заказы */
+.menu-link-orders {
+  background: url("../../img/sidebar/icon-sidebar-orders.svg") no-repeat left center;
+}
+
+.menu-link-orders:hover,
+.active.menu-link-order {
+  background: url("../../img/sidebar/icon-sidebar-orders-hover.svg") no-repeat left center;
+}
+
+/* Иконка лицевые счета */
+.menu-link-accounts {
+  background: url("../../img/sidebar/icon-sidebar-accounts.svg") no-repeat left center;
+}
+
+.menu-link-accounts:hover,
+.active.menu-link-accounts {
+  background: url("../../img/sidebar/icon-sidebar-accounts-hover.svg") no-repeat left center;
+}
+
+/* Иконка исполнитель */
+.menu-link-executor {
+  background: url("../../img/sidebar/icon-sidebar-executor.svg") no-repeat left center;
+}
+
+.menu-link-executor:hover,
+.active.menu-link-executor {
+  background: url("../../img/sidebar/icon-sidebar-executor-hover.svg") no-repeat left center;
+}
+
+/* Меню в нижней части сайдбара */
+.bottom-menu-list {
+  margin-top: auto;
+}
+
+/* Иконка для ЛК */
+.menu-link-share {
+  background: url("../../img/sidebar/icon-sidebar-share.svg") no-repeat left center;
+}
+
+.menu-link-share:hover,
+.active.menu-link-share  {
+  background: url("../../img/sidebar/icon-sidebar-share-hover.svg") no-repeat left center;
+}
+
+/* Иконка контакты */
+.menu-link-contacts {
+  background: url("../../img/sidebar/icon-sidebar-contacts.svg") no-repeat left center;
+}
+
+.menu-link-contacts:hover,
+.active.menu-link-contacts {
+  background: url("../../img/sidebar/icon-sidebar-contacts-hover.svg") no-repeat left center;
+}
+
+/* Иконка помощь */
+.menu-link-help {
+  background: url("../../img/sidebar/icon-sidebar-help.svg") no-repeat left center;
+}
+
+.menu-link-help:hover,
+.active.menu-link-help {
+  background: url("../../img/sidebar/icon-sidebar-help-hover.svg") no-repeat left center;
+}
+
+/* min-width: 1220px */
+@media screen and (max-width: 1550px) {
+  .sidebar {
+    width: 300px;
+    padding-right: 25px;
+    padding-left: 25px;
+    background-position: -7px 664px, -5px 600px;
+  }
+
+  .sidebar-logo {
+    display: flex;
+    justify-content: center;
+    margin-left: 0;
+  }
+}

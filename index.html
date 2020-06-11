@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Главная страница - РИЦ</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+
+  <div class="main-wrapper">
+    <!-- Боковое меню -->
+    <div class="sidebar">
+      <a href="#" class="sidebar-logo">
+        <img src="img/logo.svg" role="img" width="210" height="58" alt="Логотип РИЦ"></img>
+      </a>
+      <nav class="main-nav">
+        <ul class="menu-list">
+          <li class="menu-item">
+            <a class="menu-link menu-link-main-page active" href="#">Главная</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link menu-link-payment" href="#">Оплата</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link menu-link-history" href="#">История операций</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link menu-link-services" href="#">Услуги</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link menu-link-goods" href="#">Товары</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link menu-link-orders" href="#">Мои заказы</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link menu-link-accounts" href="#">Лицевые счета</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link menu-link-executor" href="#">Исполнитель</a>
+            <span class="menu-item-counter">2</span>
+          </li>
+        </ul>
+        <ul class="menu-list bottom-menu-list">
+          <li class="menu-item">
+            <a class="menu-link menu-link-contacts" href="#">Контакты</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link menu-link-help" href="#">Помощь</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Контейнер -->
+    <div class="container">
+      <h1 class="visually-hidden">Маркетплейс "АйТи Город"</h1>
+      <!-- Шапка -->
+      <header class="header">
+        <a class="header-basket" href="#">
+          Корзина (2):<span class="header-basket-total-price">17 500 р.</span>
+        </a>
+        <div class="header-support">
+          <span>Служба техподдержки:</span>
+          <div class="header-support-phones">
+            <a href="tel:+7(842354)4-30-27">+7 (84235) 4-30-27</a>,&nbsp;
+            <a href="tel:+7(842354)4-30-27">+7 (8422) 27-27-69</a>
+          </div>
+        </div>
+      </header>
+
+      <!-- Основной контент -->
+      <main>
+        <div class="entry-wrapper">
+          <section class="slider">
+            <div class="slider-list">
+              <div class="slider-item slider-mobile-pay">
+                <div class="slider-item-inner">
+                  <b class="slider-heading">
+                    Личный кабинет<br>
+                    в вашем смартфоне
+                  </b>
+                  <p class="slider-text">
+                    Оплачивайте услуги ЖКХ без комиссии в личном кабинете.<br>
+                    Приложение доступно в "Play Маркет" и "AppStore".
+                  </p>
+                  <div class="slider-btn-wrapper">
+                    <a class="slider-btn orange" href="#">Скачать</a>
+                    <a class="slider-btn blue" href="#">QR-код</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="slider-control slider-control-left" type="button">
+              <span class="visually-hidden">Влево</span>
+            </button>
+            <button class="slider-control slider-control-right" type="button">
+              <span class="visually-hidden">Вправо</span>
+            </button>
+          </section>
+          <section class="profile">
+            <div class="profile-header">
+              <img class="profile-header-avatar" src="img/profile/default_avatar.svg" alt="Аватар" role="image" width="36" height="36">
+              <a class="profile-header-settings" href="#">
+                <img src="img/profile/settings.svg" alt="Аватар" role="image" width="36" height="36">
+              </a>
+            </div>
+            <p class="profile-username">
+              Сидоров<br>
+              Николай Владимирович
+            </p>
+            <p class="profile-address">
+              г. Димитровград,<br>
+              ул. Братская, д. 43, кв. 24
+            </p>
+            <a href="#" class="profile-exit-btn">Выйти</a>
+          </section>
+        </div>
+
+        <!-- Услуги -->
+        <section class="services">
+          <h2 class="block-title">Услуги</h2>
+          <div class="card-list service-list">
+            <a href="#" class="card service-item icon-plumbing-work">
+              <b class="card-name">Сантехнические работы</b>
+              <span class="card-description">17 исполнителей</span>
+            </a>
+            <a href="#" class="card service-item icon-window">
+              <b class="card-name">Установка окон</b>
+              <span class="card-description">17 исполнителей</span>
+            </a>
+            <a href="#" class="card service-item icon-electrical">
+              <b class="card-name">Электромонтаж</b>
+              <span class="card-description">17 исполнителей</span>
+            </a>
+            <a href="#" class="card service-item icon-furniture">
+              <b class="card-name">Сборка мебели</b>
+              <span class="card-description">17 исполнителей</span>
+            </a>
+            <a href="#" class="card service-item icon-apartment-repair">
+              <b class="card-name">Квартирный ремонт</b>
+              <span class="card-description">17 исполнителей</span>
+            </a>
+            <a href="#" class="card service-item icon-internet">
+              <b class="card-name">Подключение к интернету</b>
+              <span class="card-description">17 исполнителей</span>
+            </a>
+            <a href="#" class="card service-item icon-water">
+              <b class="card-name">Доставка воды</b>
+              <span class="card-description">17 исполнителей</span>
+            </a>
+            <a href="#" class="card service-item icon-all">
+              <b class="card-name">Все услуги</b>
+              <span class="card-description">17 исполнителей</span>
+            </a>
+          </div>
+        </section>
+
+        <!-- Товары -->
+        <section class="products">
+          <h2 class="block-title">Товары</h2>
+          <div class="card-list product-list">
+            <div class="card product-item">
+              <picture class="product-picture">
+                <img src="img/products/dogfood-yellow.png" alt="Собачий корм" width="147" height="147">
+              </picture>
+              <span class="product-discount-price">-30%</span>
+                <p class="product-description card-description">Сухой корм для собак Pedigree "Мясное изобилие", 15 кг</p>
+                <div class="product-bottom-info">
+                  <div class="product-price-wrapper">
+                    <span class="product-price discount">5 000 р.</span>
+                    <span class="product-old-price">5 000 р.</span>
+                  </div>
+                  <button class="product-btn product-in-basket" type="button">
+                    <span class="visually-hidden">Удалить из корзины</span>
+                  </button>
+                </div>
+            </div>
+            <div class="card product-item">
+              <picture class="product-picture">
+                <img src="img/products/bottle-water-1.png" alt="Питьевая вода" width="136" height="136">
+              </picture>
+                <p class="product-description card-description">Вода питьевая "Вода", с 0 месяцев, 4 шт. по 5 л</p>
+                <div class="product-bottom-info">
+                  <div class="product-price-wrapper">
+                    <span class="product-price discount">5 000 р.</span>
+                  </div>
+                  <button class="product-btn product-buy-btn" type="button">
+                    <span class="visually-hidden">Добавить в корзину</span>
+                  </button>
+                </div>
+            </div>
+            <div class="card product-item">
+              <picture class="product-picture">
+                <img src="img/products/dogfood-blue-small.png" alt="Собачий корм" width="129" height="129">
+              </picture>
+              <p class="product-description card-description">Сухой корм для собак Chappi "Мясное изобилие", 15 кг</p>
+              <div class="product-bottom-info">
+                <div class="product-price-wrapper">
+                  <span class="product-price discount">5 000 р.</span>
+                </div>
+                <button class="product-btn product-buy-btn" type="button">
+                  <span class="visually-hidden">Добавить в корзину</span>
+                </button>
+              </div>
+            </div>
+            <div class="card product-item">
+              <picture class="product-picture">
+                <img src="img/products/dogfood-yellow.png" alt="Собачий корм" width="147" height="147">
+              </picture>
+              <span class="product-discount-price">-30%</span>
+              <p class="product-description card-description">Сухой корм для собак Pedigree "Мясное изобилие", 15 кг</p>
+              <div class="product-bottom-info">
+                <div class="product-price-wrapper">
+                  <span class="product-price discount">5 000 р.</span>
+                  <span class="product-old-price">5 000 р.</span>
+                </div>
+                <button class="product-btn product-in-basket" type="button">
+                  <span class="visually-hidden">Удалить из корзины</span>
+                </button>
+              </div>
+            </div>
+            <div class="card product-item">
+              <picture class="product-picture">
+                <img src="img/products/dogfood-blue-big.png" alt="Собачий корм" width="93" height="140">
+              </picture>
+              <p class="product-description card-description">Сухой корм для собак Chappi "Мясное изобилие", 15 кг</p>
+              <div class="product-bottom-info">
+                <div class="product-price-wrapper">
+                  <span class="product-price discount">5 000 р.</span>
+                </div>
+                <button class="product-btn product-buy-btn" type="button">
+                  <span class="visually-hidden">Добавить в корзину</span>
+                </button>
+              </div>
+            </div>
+            <div class="card product-item">
+              <picture class="product-picture">
+                <img src="img/products/dogfood-yellow.png" alt="Собачий корм" width="147" height="147">
+              </picture>
+              <p class="product-description card-description">Сухой корм для собак Pedigree "Мясное изобилие", 15 кг</p>
+              <div class="product-bottom-info">
+                <div class="product-price-wrapper">
+                  <span class="product-price discount">5 000 р.</span>
+                </div>
+                <button class="product-btn product-buy-btn" type="button">
+                  <span class="visually-hidden">Добавить в корзину</span>
+                </button>
+              </div>
+            </div>
+            <div class="card product-item">
+              <picture class="product-picture">
+                <img src="img/products/bottle-water-2.png" alt="Питьевая вода" width="190" height="136">
+              </picture>
+              <p class="product-description card-description">Вода питьевая "Вода", с 0 месяцев, 4 шт. по 5 л</p>
+              <div class="product-bottom-info">
+                <div class="product-price-wrapper">
+                  <span class="product-price discount">5 000 р.</span>
+                </div>
+                <button class="product-btn product-buy-btn" type="button">
+                  <span class="visually-hidden">Добавить в корзину</span>
+                </button>
+              </div>
+            </div>
+            <a class="card product-item all-products icon-all" href="#">
+              <b class="card-name">Все товары</b>
+              <span class="card-description">172 455 товаров</span>
+            </a>
+          </div>
+        </section>
+
+        <!-- Быстрая оплата -->
+        <section class="payment">
+          <h2 class="block-title">Быстрая оплата</h2>
+          <div class="card-list payment-list">
+            <a href="#" class="card payment-item icon-payment-electricity">
+              <b class="card-name">Электроэнергия</b>
+            </a>
+            <a href="#" class="card payment-item icon-payment-overhaul">
+              <b class="card-name">Капитальный ремонт</b>
+            </a>
+            <a href="#" class="card payment-item icon-payment-utilities">
+              <b class="card-name">Коммунальные услуги</b>
+            </a>
+            <a href="#" class="card payment-item icon-payment-mobile-phone">
+              <b class="card-name">Мобильная связь</b>
+            </a>
+            <a href="#" class="card payment-item icon-payment-fixed-phone">
+              <b class="card-name">Стационарная связь</b>
+            </a>
+            <a href="#" class="card payment-item icon-payment-other">
+              <b class="card-name">Другие платежи</b>
+            </a>
+          </div>
+        </section>
+
+        <!-- Таблица последние операции -->
+        <section class="last-operation">
+          <h2 class="block-title">Последние операции</h2>
+
+          <div class="last-operation-tables-group">
+            <!-- отдельная таблица для заголовков, чтобы избежать пробелемы с тенью -->
+            <table class="last-operation-table">
+              <thead>
+                <tr>
+                  <th class="last-operation-date-head">Дата</th>
+                  <th class="last-operation-name-head">Наименование</th>
+                  <th class="last-operation-service-head">Услуга/Товар/Оплата</th>
+                  <th class="last-operation-amount-head">Сумма</th>
+                  <th class="last-operation-repeat-head"><span class="visually-hidden">Повторить</span></th>
+                </tr>
+              </thead>
+            </table>
+
+            <div class="last-operation-table-wrapper">
+              <table class="last-operation-table">
+                <colgroup>
+                  <col class="last-operation-date">
+                  <col class="last-operation-name">
+                  <col class="last-operation-service">
+                  <col class="last-operation-amount">
+                  <col class="last-operation-repeat">
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <td class="last-operation-date">12.08.2018 11:37</td>
+                    <td class="last-operation-name">Замена смесителя</td>
+                    <td class="last-operation-service last-operation-plumbing-work">Сантехнические работы</td>
+                    <td class="last-operation-amount">1 024 р.</td>
+                    <td class="last-operation-repeat">Повторить</td>
+                  </tr>
+                  <tr>
+                    <td class="last-operation-date">12.08.2018 11:37</td>
+                    <td class="last-operation-name">Оплата электроэнергии</td>
+                    <td class="last-operation-service last-operation-electricity">Электроэнергия</td>
+                    <td class="last-operation-amount">13 р.</td>
+                    <td class="last-operation-repeat">Повторить</td>
+                  </tr>
+                  <tr>
+                    <td class="last-operation-date">12.08.2018 11:37</td>
+                    <td class="last-operation-name">Оплата МегаФон</td>
+                    <td class="last-operation-service last-operation-mobile-phone">Мобильная связь</td>
+                    <td class="last-operation-amount">5 846 р.</td>
+                    <td class="last-operation-repeat">Повторить</td>
+                  </tr>
+                  <tr>
+                    <td class="last-operation-date">12.08.2018 11:37</td>
+                    <td class="last-operation-name">Товар №1</td>
+                    <td class="last-operation-service last-operation-product">Покупка товара</td>
+                    <td class="last-operation-amount">50 846 р.</td>
+                    <td class="last-operation-repeat">Повторить</td>
+                  </tr>
+                  <tr>
+                    <td class="last-operation-date">12.08.2018 11:37</td>
+                    <td class="last-operation-name">Оплата МегаФон</td>
+                    <td class="last-operation-service last-operation-mobile-phone">Мобильная связь</td>
+                    <td class="last-operation-amount">846 р.</td>
+                    <td class="last-operation-repeat">Повторить</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+      </main>
+
+      <!-- Подвал -->
+      <footer class="footer">
+        <a href="#" class="footer-copyright">
+          ООО "РИЦ"
+        </a>
+        <div class="footer-contacts">
+          Колл-центр: <a href="tel:+7(8422)73-51-51">+7 (8422) 73-51-51</a>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+    <script src="js/slider.js"></script>
+
+  </body>
+</html>

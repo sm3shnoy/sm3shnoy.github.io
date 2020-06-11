@@ -1,0 +1,22 @@
+.footer {
+  display: flex;
+  flex-shrink: 0;
+  padding: 90px 0 66px;
+
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #233D9A;
+}
+
+.footer-copyright {
+  margin: 0 59px 0 32px;
+}
+
+.footer-copyright a {
+  color: #233D9A;
+}
+
+.footer-contacts a {
+  color: #233D9A;
+}

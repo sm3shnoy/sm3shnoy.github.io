@@ -1,0 +1,62 @@
+.services {
+  margin-top: 51px;
+}
+
+.service-item {
+  justify-content: center;
+
+  background-position: 28px 22px;
+}
+
+.service-item .card-description {
+  margin-top: 6px;
+}
+
+/* иконки услуг */
+
+/* сантехнические работы */
+.icon-plumbing-work {
+  background-image: url("../../img/services/icon-plumbing-work.svg");
+}
+
+/* установка окон */
+.icon-window {
+  background-image: url("../../img/services/icon-window.svg");
+}
+
+/* электромонтаж */
+.icon-electrical {
+  background-image: url("../../img/services/icon-electrical.svg");
+}
+
+/* сборка мебели */
+.icon-furniture {
+  background-image: url("../../img/services/icon-furniture.svg");
+}
+
+/* квартирный ремонт */
+.icon-apartment-repair {
+  background-image: url("../../img/services/icon-apartment-repair.svg");
+}
+
+/* подключение к интернету */
+.icon-internet {
+  background-image: url("../../img/services/icon-internet.svg");
+}
+/* доставка воды */
+.icon-water {
+  background-image: url("../../img/services/icon-water.svg");
+}
+/* все услуги */
+.icon-all {
+  background-image: url("../../img/services/icon-all-services.svg");
+}
+
+/* min-width: 1220px */
+@media screen and (max-width: 1549px) {
+  /* Услуги на главной */
+  .service-item {
+    background-size: 11%;
+    background-position: 15px 8px;
+  }
+}

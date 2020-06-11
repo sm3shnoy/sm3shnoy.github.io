@@ -1,0 +1,57 @@
+.payment {
+  margin-top: 25px;
+}
+
+.payment-list {
+  margin-top: 22px;
+}
+
+.payment-item {
+  padding-top: 84px;
+  margin-bottom: 25px;
+
+  background-position: 29px 25px;
+}
+
+/* иконки услуг */
+
+/* сантехнические работы */
+.icon-payment-electricity {
+  background-image: url("../../img/payment/icon-electricity.svg");
+}
+
+/* установка окон */
+.icon-payment-overhaul{
+  background-image: url("../../img/payment/icon-overhaul.svg");
+}
+
+/* электромонтаж */
+.icon-payment-utilities {
+  background-image: url("../../img/payment/icon-utilities.svg");
+}
+
+/* сборка мебели */
+.icon-payment-mobile-phone {
+  background-image: url("../../img/payment/icon-mobile-phone.svg");
+}
+
+/* квартирный ремонт */
+.icon-payment-fixed-phone {
+  background-image: url("../../img/payment/icon-fixed-phone.svg");
+}
+
+/* подключение к интернету */
+.icon-payment-other{
+  background-image: url("../../img/payment/icon-other-payment.svg");
+}
+
+/* min-width: 1220px */
+@media screen and (max-width: 1549px) {
+  /* Оплата на главной */
+  .payment-item {
+    background-size: 11%;
+    background-position: 12px 8px;
+    min-height: auto;
+    padding-top: 50px;
+  }
+}

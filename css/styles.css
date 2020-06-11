@@ -1,0 +1,143 @@
+@import "blocks/sidebar.css";
+@import "blocks/header.css";
+@import "blocks/slider.css";
+@import "blocks/profile.css";
+@import "blocks/cards.css";
+@import "blocks/services.css";
+@import "blocks/products.css";
+@import "blocks/payment.css";
+@import "blocks/last-operation.css";
+@import "blocks/footer.css";
+
+/* Основные настройки */
+body {
+  min-width: 320px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+
+  font-family: "Gramatika", "Arial", "sans-serif";
+  font-size: 16px;
+  font-weight: 400;
+  color: #003A9E;
+
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+  color: #003A9E;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+
+  border: 0;
+
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.main-wrapper {
+  position: relative;
+
+  display: flex;
+  min-height: 100%;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.main-wrapper::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+
+  width: 100%;
+  height: 100%;
+
+  background: url("../img/bg/orange-figure.svg") no-repeat 0 121px,
+              url("../img/bg/white-figure.svg") no-repeat 0 415px,
+              url("../img/bg/blue-figure.svg") no-repeat 0 94px;
+
+  transform: rotate(180deg);
+}
+
+.container {
+  /* width: 100%;
+  max-width: 1462px; */
+  width: 76.146%;
+  height: 100%;
+  margin: 0 3.073% 0 399px;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+/* Заголовки секций */
+.block-title {
+  margin: 0 0 0 34px;
+
+  font-size: 30px;
+  font-weight: 700;
+}
+
+/* обертка на главной для слайдера и профиля */
+.entry-wrapper {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-top: 70px;
+}
+
+/* min-width: 1550px; */
+@media screen and (max-width: 1919px) {
+  .container {
+    margin-right: 2%
+  }
+}
+
+/* min-width: 1220px; */
+@media screen and (max-width: 1549px) {
+  .main-wrapper::after {
+    background-position: 0 193px, -33px 320px, -66px 94px;
+  }
+
+  .container {
+    margin-left: 340px;
+  }
+
+  .entry-wrapper {
+    margin-top: 30px;
+  }
+
+  .block-title {
+    margin-left: 14px;
+
+    font-size: 28px;
+  }
+}
