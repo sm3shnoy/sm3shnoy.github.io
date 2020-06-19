@@ -16,7 +16,6 @@ var onEscPressMenuShow = function (evt) {
 function onClickMenuShow () {
   overlay.style.display = 'block';
   sidebarMenu.classList.add('sidebar-show');
-  
   addEventShowMenu();
 }
 
@@ -32,6 +31,7 @@ function addEventShowMenu () {
   document.addEventListener('keydown', onEscPressMenuShow);
   overlay.addEventListener('click', onClickMenuHide);
   closeMenu.addEventListener('click', onClickMenuHide);
+  document.body.style.overflow = 'hidden';
 }
 
 function removeEventShowMenu () {
@@ -39,6 +39,7 @@ function removeEventShowMenu () {
   document.removeEventListener('keydown', onEscPressMenuShow);
   overlay.removeEventListener('click', onClickMenuHide);
   closeMenu.removeEventListener('click', onClickMenuHide);
+  document.body.style.overflow = 'auto';
 }
 
 removeEventShowMenu();
