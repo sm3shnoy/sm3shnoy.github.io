@@ -66,3 +66,25 @@
     font-size: 14px;
   }
 }
+
+/* min-width: 768px */
+@media screen and (max-width: 1023px) {
+  .card {
+    width: calc(50% - 30px);
+  }
+}
+
+/* min-width: 480px */
+@media screen and (max-width: 767px) {
+  .card-list {
+    margin: 21px 0;
+    justify-content: center;
+  }
+  
+  .card {
+    max-width: 480px;
+    width: 100%;
+    margin: 0 0 25px;
+    min-height: 95px;
+  }
+}

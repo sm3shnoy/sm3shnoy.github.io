@@ -80,3 +80,47 @@
     font-size: 14px;
   }
 }
+
+/* min-width: 768px */
+@media screen and (max-width: 1023px) {
+  .profile {
+    max-width: 500px;
+    width: 100%;
+    margin: 30px auto 0;
+  }
+
+  .profile-username {
+    font-size: 28px;
+    line-height: 30px;
+  }
+
+  .profile-address {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+/* min-width: 480px */
+@media screen and (max-width: 767px) {
+  .profile {
+    max-width: 480px;
+  }
+}
+
+/* min-width: 320px */
+@media screen and (max-width: 479px) {
+  .profile {
+    margin-top: 20px;
+    max-width: 320px;
+  }
+
+  .profile-username {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .profile-address {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}

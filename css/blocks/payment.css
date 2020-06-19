@@ -49,9 +49,18 @@
 @media screen and (max-width: 1549px) {
   /* Оплата на главной */
   .payment-item {
-    background-size: 11%;
-    background-position: 12px 8px;
     min-height: auto;
     padding-top: 50px;
+
+    background-size: 32px;
+    background-position: 12px 8px;
+  }
+}
+
+/* min-width: 480px */
+@media screen and (max-width: 767px) {
+  .payment-item {
+    padding: 29px 25px 25px 80px;
+    background-position: 30px center;
   }
 }

@@ -2,12 +2,8 @@
   margin-top: 23px;
 }
 
-.last-operation-tables-group {
-  margin-top: 26px;
-}
-
 .last-operation-table-wrapper {
-  margin-top: 8px;
+  margin-top: 17px;
 
   box-shadow: 0px 10px 30px #2F83DE33;
   border-radius: 20px;
@@ -16,48 +12,53 @@
 
 .last-operation-table {
   width: 100%;
+
   border-collapse: collapse;
   border: none;
 }
 
 .last-operation-table th {
   color: #47A9FF;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 18px;
   text-align: left;
   font-weight: 500;
 }
 
 .last-operation-table tbody tr {
-  background-color: #ffffff;
   border-top: 1px solid #b0b8ff;
-}
-
-.last-operation-table tbody tr:first-child {
-  border-top: none;
 }
 
 .last-operation-table td {
   padding: 30px 16px 29px;
 }
 
+.last-operation-table th {
+  padding: 10px 16px;
+}
+
 /* ячейки в таблице последние операции */
 
 /* дата */
+.last-operation-table .last-operation-date-head,
 .last-operation-table .last-operation-date {
   width: 13.4%;
+  padding-left: 32px;
+}
 
+.last-operation-table .last-operation-date {  
   color: #47A9FF;
   font-weight: 500;
-  
-  padding-left: 2.189%;
 }
 
 /* название */
+.last-operation-table .last-operation-name-head,
 .last-operation-table .last-operation-name {
   width: 26.45%;
-  padding-left: 1.984%;
+  padding-left: 28px;
+}
 
+.last-operation-table .last-operation-name {
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
@@ -65,9 +66,14 @@
 }
 
 /* услуга товар оплата */
-.last-operation-table .last-operation-service {
+.last-operation-table .last-operation-service-head {
   width: 28.19%;
-  padding-left: 3.32%;
+  padding-left: 22px;
+}
+
+.last-operation-table .last-operation-service {
+  padding-left: 47px;
+  width: 28.19%;
 
   font-size: 16px;
   font-weight: 500;
@@ -80,9 +86,13 @@
 }
 
 /* сумма */
+.last-operation-table .last-operation-amount-head,
 .last-operation-table .last-operation-amount {
   width: 16.8%;
+  padding-left: 15px;
+}
 
+.last-operation-table .last-operation-amount {
   font-size: 20px;
   font-weight: 700;
   line-height: 18px;
@@ -100,27 +110,6 @@
 
   background: url("../../img/last-operation/repeat.svg") no-repeat 17px center;
   background-size: 24px;
-}
-
-/* заголовки */
-.last-operation-table .last-operation-date-head {
-  width: 13.4%;
-  padding: 0 2.189%;
-}
-
-.last-operation-table .last-operation-name-head {
-  width: 26.45%;
-  padding: 0 1.984%;
-}
-
-.last-operation-table .last-operation-service-head {
-  width: 28.19%;
-  padding: 0 1.642%;
-}
-
-.last-operation-table .last-operation-amount-head {
-  width: 16.8%;
-  padding-left: 1.1%;
 }
 
 /* закругление у крайних ячеек таблицы */
@@ -163,42 +152,43 @@
   .last-operation-table .last-operation-service {
     background-position: 5px center;
   }
+
+    /* Ячейки с датой */
+    .last-operation-table .last-operation-date-head,
+    .last-operation-table .last-operation-date {
+      width: 15.4%;
+    }
 }
 
 /* min-width: 1220px */
 @media screen and (max-width: 1549px) {
   /* Таблица последние операции на главной */
+  .last-operation-table th {
+    font-size: 15px;
+  }
+
   .last-operation-table td {
     padding: 20px 16px;
   }
 
   /* Ячейки с датой */
-  .last-operation-table .last-operation-date-head {
-    width: 17.4%;
-  }
-  
+  .last-operation-table .last-operation-date-head,
   .last-operation-table .last-operation-date {
-    width: 17.4%;
+    width: 19.4%;
+  }
 
+  .last-operation-table .last-operation-date {
     font-size: 14px;
   }
 
   /* Ячейки с названием */
-  .last-operation-table .last-operation-name-head {
-    padding: 0 1.2%;
-  }
-
   .last-operation-table .last-operation-name {
     font-size: 14px;
   }
 
   /* Ячейки с услугами */
-  .last-operation-table .last-operation-service-head {
-    width: 26.19%;
-    padding: 0 1.2%;
-  }
-
   .last-operation-table .last-operation-service {
+    padding-left: 32px;
     font-size: 14px;
 
     background-position: left center;
@@ -206,10 +196,6 @@
   }
 
   /* Ячейки с суммой */
-  .last-operation-table .last-operation-amount-head {
-    padding-left: 0.5%;
-  }
-  
   .last-operation .last-operation-amount {
     font-size: 18px;
   }
@@ -219,5 +205,170 @@
     font-size: 14px;
 
     background-size: 20px;
+  }
+}
+
+/* min-width: 768px */
+@media screen and (max-width: 1023px) {
+  .last-operation-table td {
+    padding: 15px 15px;
+  }
+
+  .last-operation-table .last-operation-date-head, 
+  .last-operation-table .last-operation-date {
+    width: 15.4%;
+    padding-left: 15px;
+
+    text-align: center;
+  }
+
+  .last-operation-table .last-operation-name-head, 
+  .last-operation-table .last-operation-name {
+    width: 30%;
+    padding-left: 15px;
+  }
+  
+  .last-operation-table .last-operation-service-head,
+  .last-operation-table .last-operation-service {
+    padding-left: 15px;
+    width: 30%;
+    
+    background: none;
+  }
+
+  .last-operation .last-operation-amount {
+    font-size: 16px;
+  }
+  
+  .last-operation-table .last-operation-repeat {
+    padding-left: 39px;
+    
+    font-size: 14px;
+
+    background-size: 16px;
+  }
+}
+
+/* min-width: 480px */
+@media screen and (max-width: 767px) {
+  .last-operation-table-wrapper {
+    max-width: 480px;
+    margin: 17px auto 0;
+  }
+
+  .last-operation-table thead {
+    display: none;
+  }
+
+  .last-operation-table tbody tr {
+    display: block;
+
+    border-top: 0;
+    border-bottom: 2px solid #b0b8ff;
+  }
+
+  .last-operation-table tbody tr:last-child {
+    border-bottom: 0;
+  }
+
+  .last-operation-table td {
+    display: block;
+    padding: 0;
+
+    text-align: left;
+  }
+
+  .last-operation-table td::before {
+    margin-right: 10px;
+
+    color: #47A9FF;
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  /* Дата */
+  .last-operation-table .last-operation-date {
+    width: 100%;
+    padding: 10px 10px 5px;
+
+    font-size: 15px;
+    color: #233D9A;
+    font-weight: 500;
+    text-align: left;
+  }
+
+  .last-operation-table .last-operation-date::before {
+    content: "Дата: ";
+  }
+
+  /* Наименование */
+  .last-operation-table .last-operation-name {
+    width: 100%;
+    padding: 5px 10px;
+    
+    font-size: 15px;
+    color: #233D9A;
+    font-weight: 500;
+  }
+
+  .last-operation-table .last-operation-name::before {
+    content: "Наименование: ";
+  }
+
+  /* Услуга / товар / оплата */
+  .last-operation-table .last-operation-service {
+    width: 100%;
+    padding: 5px 10px;
+    
+    font-size: 15px;
+    color: #233D9A;
+    font-weight: 500;
+  }
+
+  .last-operation-table .last-operation-service::before {
+    content: "Услуга / товар / оплата: ";
+  }
+
+  /* Сумма */
+  .last-operation-table .last-operation-amount {
+    width: 100%;
+    padding: 5px 10px;
+    
+    font-size: 15px;
+    color: #233D9A;
+    font-weight: 500;
+  }
+
+  .last-operation-table .last-operation-amount::before {
+    content: "Сумма: ";
+  }
+
+  /* Повторить */
+  .last-operation-table .last-operation-repeat {
+    width: 100%;
+    padding: 12px 10px 10px;
+
+    font-size: 15px;
+    color: #233D9A;
+    font-weight: 500;
+    text-align: center;
+    
+    background-position-x: 37%;
+  }
+}
+
+/* min-width: 320px */
+@media screen and (max-width: 479px) {
+  .last-operation-table td {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .last-operation-table td::before {
+    margin-bottom: 5px;
+  }
+
+  .last-operation-table .last-operation-repeat {
+    background-position-x: 31%;
   }
 }
