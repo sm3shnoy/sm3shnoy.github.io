@@ -10,7 +10,6 @@
   background: url("../../img/sidebar/bg/sidebar-white-figure.svg") no-repeat -7px 787px,
               #fff url("../../img/sidebar/bg/sidebar-blue-figure.svg") no-repeat -5px 715px;
   -webkit-box-shadow: 6px 0px 17px -4px rgba(71,169,255,0.6);
-  -moz-box-shadow: 6px 0px 17px -4px rgba(71,169,255,0.6);
   box-shadow: 6px 0px 17px -4px rgba(71,169,255,0.6);
 }
 
@@ -96,11 +95,15 @@
 }
 
 .sidebar-close::before {
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .sidebar-close::after {
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 /* ***************** */
@@ -112,9 +115,15 @@
   vertical-align: middle;
 }
 
+/* Меню в сайдбаре */
 .main-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding-left: 2px;
   height: 92%;
 
@@ -129,6 +138,8 @@
 }
 
 .menu-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-bottom: 26px;
   padding-right: 21px;
@@ -294,8 +305,12 @@
   }
 
   .sidebar-logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-left: 0;
   }
 }
@@ -310,23 +325,31 @@
     padding-top: 50px;
 
     visibility: hidden;
+    -webkit-transition: all ease;
+    -o-transition: all ease;
     transition: all ease;
-    transition-duration: .8s;
+    -webkit-transition-duration: .8s;
+         -o-transition-duration: .8s;
+            transition-duration: .8s;
   }
 
+  /* Для адаптивного меню показать/скрыть сайдбар */
   .sidebar-show {
     left: 0;
     visibility: visible;
   }
 
+  /* Кнопка для открытия сайдбара */
   .sidebar-menu-toggle {
     display: block;
   }
 
+  /* Кнопка для закрытия сайдбара */
   .sidebar-close {
     display: block;
   }
 
+  /* Основное меню */
   .main-nav {
     height: 89%;
   }

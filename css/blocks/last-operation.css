@@ -2,10 +2,15 @@
   margin-top: 23px;
 }
 
+/* 
+ * Обертка таблицы последние операции
+ * Используется для создания теней
+ */
 .last-operation-table-wrapper {
   margin-top: 17px;
 
-  box-shadow: 0px 10px 30px #2F83DE33;
+  -webkit-box-shadow: 0px 10px 30px #2F83DE33;
+          box-shadow: 0px 10px 30px #2F83DE33;
   border-radius: 20px;
   background-color: #ffffff;
 }
@@ -149,6 +154,7 @@
 
 /* min-width: 1550px */
 @media screen and (max-width: 1919px) {
+  /* Ячейки с услугами */
   .last-operation-table .last-operation-service {
     background-position: 5px center;
   }
@@ -214,6 +220,7 @@
     padding: 15px 15px;
   }
 
+  /* Ячейки с датой */
   .last-operation-table .last-operation-date-head, 
   .last-operation-table .last-operation-date {
     width: 15.4%;
@@ -222,12 +229,14 @@
     text-align: center;
   }
 
+  /* Ячейки с наименованием */
   .last-operation-table .last-operation-name-head, 
   .last-operation-table .last-operation-name {
     width: 30%;
     padding-left: 15px;
   }
   
+  /* Ячейки с услугами */
   .last-operation-table .last-operation-service-head,
   .last-operation-table .last-operation-service {
     padding-left: 15px;
@@ -236,10 +245,12 @@
     background: none;
   }
 
+  /* Ячейки с суммой */
   .last-operation .last-operation-amount {
     font-size: 16px;
   }
   
+  /* Ячейки с повторением операции */
   .last-operation-table .last-operation-repeat {
     padding-left: 39px;
     
@@ -251,11 +262,13 @@
 
 /* min-width: 480px */
 @media screen and (max-width: 767px) {
+  /* Обертка таблицы */
   .last-operation-table-wrapper {
     max-width: 480px;
     margin: 17px auto 0;
   }
 
+  /* Отключает часть таблицы с заголовками */
   .last-operation-table thead {
     display: none;
   }
@@ -278,6 +291,7 @@
     text-align: left;
   }
 
+  /* Заголовки через псевдоэлементы */
   .last-operation-table td::before {
     margin-right: 10px;
 
@@ -360,14 +374,20 @@
 /* min-width: 320px */
 @media screen and (max-width: 479px) {
   .last-operation-table td {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 
   .last-operation-table td::before {
     margin-bottom: 5px;
   }
 
+  /* Ячейка с повторением операции */
   .last-operation-table .last-operation-repeat {
     background-position-x: 31%;
   }

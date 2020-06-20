@@ -49,18 +49,25 @@ img {
 }
 
 html {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   height: 100%;
 }
 
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
 }
 
+/* Обертка сайдбара и основного контента */
 .main-wrapper {
   position: relative;
+
+  display: -webkit-box;
+
+  display: -ms-flexbox;
 
   display: flex;
   min-height: 100%;
@@ -69,6 +76,7 @@ html {
   margin: 0 auto;
 }
 
+/* На этом блоке висит фон с белой, синей, оранжевой фигурами */
 .main-wrapper::after {
   content: "";
   position: absolute;
@@ -81,7 +89,11 @@ html {
               url("../img/bg/white-figure.svg") no-repeat 0 415px,
               url("../img/bg/blue-figure.svg") no-repeat 0 94px;
 
-  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+
+      -ms-transform: rotate(180deg);
+
+          transform: rotate(180deg);
 }
 
 .container {
@@ -90,14 +102,22 @@ html {
   width: 76.146%;
   height: 100%;
   margin: 0 3.073% 0 399px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 main {
-  flex: 1 0 auto;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
 }
 
+/* Затемнение основного фона */
 .overlay {
   position: fixed;
   display: none;
@@ -122,9 +142,15 @@ main {
 
 /* обертка на главной для слайдера и профиля */
 .entry-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-top: 70px;
 }
 
@@ -137,6 +163,9 @@ main {
 
 /* min-width: 1220px; */
 @media screen and (max-width: 1549px) {
+  /* Обертка сайдбара и основного контента
+   * на этом блоке висит фон с белой, синей, оранжевой фигурами
+   */
   .main-wrapper::after {
     background-position: 0 193px, -33px 320px, -66px 94px;
   }
@@ -145,10 +174,12 @@ main {
     margin-left: 340px;
   }
 
+  /* Обертка для слайдера и профиля на главной */
   .entry-wrapper {
     margin-top: 30px;
   }
 
+  /* Заголовки блоков */
   .block-title {
     margin-left: 14px;
 
@@ -172,8 +203,12 @@ main {
     max-width: 868px;
   }
 
+  /* Обертка для слайдера и профиля на главной */
   .entry-wrapper {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -190,6 +225,7 @@ main {
     max-width: 320px;
   }
 
+  /* Обертка для слайдера и профиля на главной */
   .entry-wrapper {
     margin-top: 15px;
   }

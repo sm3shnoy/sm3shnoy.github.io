@@ -12,14 +12,25 @@
   margin-bottom: 25px;
 }
 
+/* Блок-обертка для картинки товара */
 .product-picture {
   width: 100%;
   height: 147px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
+/* 
+ * Скидка в процентах в верхнем углу карточки
+ * Этот блок добавляется если есть скидка по товару
+ */
 .product-discount-price {
   position: absolute;
   top: 19px;
@@ -32,6 +43,7 @@
   color: #F86512;
 }
 
+/* Описание товара */
 .product-description {
   margin-top: 22px;
   padding: 0 4px 0 10px;
@@ -44,19 +56,29 @@
   word-break: break-word; 
 }
 
+/* Нижняя часть карточки с  продуктом */
 .product-bottom-info {
   width: 100%;
   padding: 0 4px 0 10px;
   margin-top: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
+/* Обертка для цен в нижней части */
 .product-price-wrapper {
-  flex-grow: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
+/* Текущая цена */
 .product-price {
   font-size: 24px;
   font-weight: 700;
@@ -65,10 +87,17 @@
   color: #003A9E;
 }
 
+/* 
+ * Класс .discount добавляется если есть скидка по товару
+*/
 .product-price.discount {
   color: #F86512;
 }
 
+/*
+ * Старая цена
+ * Этот блок добавляется если есть скидка по товару
+ */
 .product-old-price {
   margin: 6px 0 0 10px;
 
@@ -77,6 +106,7 @@
   text-decoration: line-through;
 }
 
+/* Кнопка купить */
 .product-btn {
   width: 40px;
   height: 40px;
@@ -87,24 +117,33 @@
   cursor: pointer;
 }
 
+/* Иконка корзины до нажатия */
 .product-buy-btn {
   background: transparent url("../../img/products/basket.svg") no-repeat center;
-  box-shadow: 0px 15px 20px #DF0E771A;
+  -webkit-box-shadow: 0px 15px 20px #DF0E771A;
+          box-shadow: 0px 15px 20px #DF0E771A;
   border: 4px solid #F86512;
 }
 
+/* Иконка с добавлением корзины после нажатия */
 .product-in-basket {
   background: transparent url("../../img/products/basket.svg") no-repeat center;
   border: 4px solid #CBE7FF;
 }
 
+/* Недоступно для покупки */
 .product-buy-btn:disabled {
   background-color: #c9c9c9;
 }
 
+/* Карточка для перехода ко всем товарам */
 .all-products {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   padding: 27px 19px 19px 30px;
 
   background-position: 30px 168px;
@@ -122,6 +161,7 @@
     padding-left: 14px;
   }
 
+  /* Описание товара */
   .product-description {
     padding: 0;
 
@@ -129,20 +169,24 @@
     line-height: 18px;
   }
 
+  /* Нижняя часть в карточке */
   .product-bottom-info {
     padding: 0;
   }
 
+  /* Цена товара */
   .product-price {
     font-size: 22px;
     line-height: 25px;
   }
 
+  /* Старая цена товара */
   .product-old-price {
     margin-left: 5px;
     font-size: 14px;
   }
 
+  /* Заголовок в карточке все продукты */
   .all-products .card-name {
     font-size: 22px;
   }
