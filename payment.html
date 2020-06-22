@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Главная страница - РИЦ</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+  
+    <div class="overlay"></div>
+    <div class="main-wrapper">
+      <!-- Боковое меню -->
+      <div class="sidebar">
+        <button class="sidebar-close"><span class="visually-hidden">Закрыть</span></button>
+        <a href="index.html" class="sidebar-logo">
+          <img src="img/logo.svg" width="210" height="58" alt="Логотип РИЦ">
+        </a>
+        <nav class="main-nav">
+          <ul class="menu-list">
+            <li class="menu-item">
+              <a class="menu-link menu-link-main-page" href="index.html">Главная</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link menu-link-payment active" href="#">Оплата</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link menu-link-history" href="#">История операций</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link menu-link-services" href="#">Услуги</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link menu-link-goods" href="#">Товары</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link menu-link-orders" href="#">Мои заказы</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link menu-link-accounts" href="#">Лицевые счета</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link menu-link-executor" href="#">Исполнитель</a>
+              <span class="menu-item-counter">2</span>
+            </li>
+          </ul>
+          <ul class="menu-list bottom-menu-list">
+            <li class="menu-item">
+              <a class="menu-link menu-link-contacts" href="#">Контакты</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link menu-link-help" href="#">Помощь</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Контейнер -->
+      <div class="container">
+        <h1 class="visually-hidden">Маркетплейс "АйТи Город"</h1>
+        <!-- Шапка -->
+        <header class="header">
+          <button class="sidebar-menu-toggle" type="button"><span></span><span class="visually-hidden"></span></button>
+          <a class="header-basket" href="#">
+            Корзина (2):<span class="header-basket-total-price">17 500 р.</span>
+          </a>
+          <a href="index.html" class="header-mobile-logo">
+            <img src="img/logo.svg" width="210" height="58" alt="Логотип РИЦ">
+          </a>
+          <div class="header-support">
+            <span>Служба техподдержки:</span>
+            <div class="header-support-phones">
+              <a href="tel:+7(842354)4-30-27">+7 (84235) 4-30-27</a><i>,&nbsp;</i>
+              <a href="tel:+7(842354)4-30-27">+7 (8422) 27-27-69</a>
+            </div>
+          </div>
+        </header>
+
+        <!-- Основной контент -->
+        <main>
+
+          <!-- Быстрая оплата -->
+          <section class="payment">
+            <h2 class="block-title">Быстрая оплата</h2>
+            <div class="card-list payment-list">
+              <a href="#" class="card payment-item icon-payment-electricity">
+                <b class="card-name">Электроэнергия</b>
+              </a>
+              <a href="#" class="card payment-item icon-payment-overhaul">
+                <b class="card-name">Капитальный ремонт</b>
+              </a>
+              <a href="#" class="card payment-item icon-payment-utilities">
+                <b class="card-name">Коммунальные услуги</b>
+              </a>
+              <a href="#" class="card payment-item icon-payment-mobile-phone">
+                <b class="card-name">Мобильная связь</b>
+              </a>
+              <a href="#" class="card payment-item icon-payment-fixed-phone">
+                <b class="card-name">Стационарная связь</b>
+              </a>
+              <a href="#" class="card payment-item icon-payment-other">
+                <b class="card-name">Другие платежи</b>
+              </a>
+            </div>
+          </section>
+
+        </main>
+
+        <!-- Подвал -->
+        <footer class="footer">
+          <a href="index.html" class="footer-copyright">
+            ООО "РИЦ"
+          </a>
+          <div class="footer-contacts">
+            Колл-центр: <a href="tel:+7(8422)73-51-51">+7 (8422) 73-51-51</a>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <script src="js/slider.js"></script>
+    <script src="js/script.js" defer></script>
+
+  </body>
+</html>
