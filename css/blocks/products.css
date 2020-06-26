@@ -127,7 +127,7 @@
 
 /* Иконка с добавлением корзины после нажатия */
 .product-in-basket {
-  background: transparent url("../../img/products/basket.svg") no-repeat center;
+  background: transparent url("../../img/products/flag.svg") no-repeat center;
   border: 4px solid #CBE7FF;
 }
 

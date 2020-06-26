@@ -176,7 +176,7 @@
 }
 
 .menu-link:hover,
-.active {
+.menu-link.active {
   color: #F86512;
   font-weight: 700;
 }
@@ -250,6 +250,16 @@
   background: url("../../img/sidebar/icon-sidebar-accounts-hover.svg") no-repeat left center;
 }
 
+/* Иконка обращения */
+.menu-link-treatment {
+  background: url("../../img/sidebar/icon-sidebar-treatment.svg") no-repeat left center;
+}
+
+.menu-link-treatment:hover,
+.active.menu-link-treatment {
+  background: url("../../img/sidebar/icon-sidebar-treatment-hover.svg") no-repeat left center;
+}
+
 /* Иконка исполнитель */
 .menu-link-executor {
   background: url("../../img/sidebar/icon-sidebar-executor.svg") no-repeat left center;
@@ -258,6 +268,26 @@
 .menu-link-executor:hover,
 .active.menu-link-executor {
   background: url("../../img/sidebar/icon-sidebar-executor-hover.svg") no-repeat left center;
+}
+
+/* Иконка собрания */
+.menu-link-meetings {
+  background: url("../../img/sidebar/icon-sidebar-meetings.svg") no-repeat left center;
+}
+
+.menu-link-meetings:hover,
+.active.menu-link-meetings {
+  background: url("../../img/sidebar/icon-sidebar-meetings-hover.svg") no-repeat left center;
+}
+
+/* Иконка мой дом */
+.menu-link-my-home {
+  background: url("../../img/sidebar/icon-sidebar-my-home.svg") no-repeat left center;
+}
+
+.menu-link-my-home:hover,
+.active.menu-link-my-home {
+  background: url("../../img/sidebar/icon-sidebar-my-home-hover.svg") no-repeat left center;
 }
 
 /* Меню в нижней части сайдбара */

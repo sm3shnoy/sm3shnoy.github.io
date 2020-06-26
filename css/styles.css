@@ -1,11 +1,13 @@
 @import "blocks/sidebar.css";
 @import "blocks/header.css";
+@import "blocks/tabs.css";
 @import "blocks/slider.css";
 @import "blocks/profile.css";
 @import "blocks/cards.css";
 @import "blocks/services.css";
 @import "blocks/products.css";
 @import "blocks/payment.css";
+@import "blocks/indications.css";
 @import "blocks/last-operation.css";
 @import "blocks/footer.css";
 
@@ -97,10 +99,8 @@ html {
 }
 
 .container {
-  /* width: 100%;
-  max-width: 1462px; */
   width: 76.146%;
-  height: 100%;
+  min-height: 100%;
   margin: 0 3.073% 0 399px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -152,6 +152,39 @@ main {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-top: 70px;
+}
+
+/* Хлебные крошки */
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 43px 0 0 34px;
+  padding: 0;
+
+  list-style: none;
+}
+
+.breadcrumbs li a {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 500;
+  color: #233D9A;
+}
+
+.breadcrumbs li a:hover,
+.breadcrumbs li a:focus,
+.breadcrumbs li .active {
+  color: #47A9FF;
+  border-bottom: 1px solid #47A9FF;
+}
+
+.breadcrumbs li::after {
+  content: "/";
+  margin: 0 3px;
+}
+
+.breadcrumbs li:last-child::after {
+  content: "";
 }
 
 /* min-width: 1550px; */
