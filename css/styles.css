@@ -1,3 +1,6 @@
+@import "blocks/modal.css";
+@import "blocks/dropdown.css";
+@import "blocks/inputs.css";
 @import "blocks/sidebar.css";
 @import "blocks/header.css";
 @import "blocks/tabs.css";
@@ -8,6 +11,7 @@
 @import "blocks/products.css";
 @import "blocks/payment.css";
 @import "blocks/indications.css";
+@import "blocks/my-services.css";
 @import "blocks/last-operation.css";
 @import "blocks/footer.css";
 
@@ -120,16 +124,22 @@ main {
 /* Затемнение основного фона */
 .overlay {
   position: fixed;
-  display: none;
+  opacity: 0;
+  visibility: hidden;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 58, 158, 0.7);
   z-index: 102;
   cursor: pointer;
+}
+
+.overlay.active {
+  visibility: visible;
+  opacity: 1;
 }
 
 /* Заголовки секций */

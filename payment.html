@@ -33,7 +33,7 @@
               <a class="menu-link menu-link-history" href="#">История операций</a>
             </li>
             <li class="menu-item">
-              <a class="menu-link menu-link-services" href="#">Услуги</a>
+              <a class="menu-link menu-link-services" href="services.html">Услуги</a>
             </li>
             <li class="menu-item">
               <a class="menu-link menu-link-goods" href="#">Товары</a>
@@ -98,14 +98,20 @@
             <li>Быстрая оплата</li>
           </ul>
 
-          <div class="tabs payment-tabs">
-            <button class="tab-item active" type="button" data-tab-name="payment-content">Быстрая оплата</button>
-            <button class="tab-item" type="button" data-tab-name="indication-content">Ввод показаний</button>
-            <button class="tab-item" type="button">Мои услуги</button>
-          </div>
+          <ul class="tabs payment-tabs">
+            <li>
+              <a href="#section1" class="tab-item">Быстрая оплата</a>
+            </li>
+            <li>
+              <a href="#section2" class="tab-item">Ввод показаний</a>
+            </li>
+            <li>
+              <a href="#section3" class="tab-item">Мои услуги</a>
+            </li>
+          </ul>
 
           <!-- Быстрая оплата -->
-          <section class="payment payment-content tab-content active">
+          <section class="payment active" id="section1">
             <h2 class="block-title">Быстрая оплата</h2>
             <div class="card-list payment-list">
               <a href="#" class="card payment-item icon-payment-electricity">
@@ -130,7 +136,7 @@
           </section>
           
           <!-- Ввод показаний -->
-          <section class="indication indication-content tab-content">
+          <section class="indication" id="section2">
             <h2 class="block-title">Ввод показаний</h2>
             <div class="card-list indication-card-list">
               <div class="card indication-card">
@@ -139,26 +145,26 @@
                   <div class="indication-item">
                     <span class="indication-name cold-water">Холодное водоснабжение</span>
                     <div class="indication-field-wrapper">
-                      <div class="indication-field">
+                      <div class="indication-field form-field">
                         <label for="lastIndication1">Последнее показание (27.06.2020)</label>
-                        <input class="indication-input" id="lastIndication1" name="lastIndication" value="1574" readonly>
+                        <input class="form-input" id="lastIndication1" name="lastIndication" value="1574" readonly>
                       </div>
-                      <div class="indication-field">
+                      <div class="indication-field form-field">
                         <label for="newIndication1">Новое <br> показание</label>
-                        <input class="indication-input" id="newIndication1" name="newIndication" value="1574">
+                        <input class="form-input" id="newIndication1" name="newIndication" value="1574">
                       </div>
                     </div>
                   </div>
                   <div class="indication-item">
                     <span class="indication-name hot-water">Горячее водоснабжение</span>
                     <div class="indication-field-wrapper">
-                      <div class="indication-field">
+                      <div class="indication-field form-field">
                         <label for="lastIndication2">Последнее показание (27.06.2020)</label>
-                        <input class="indication-input" id="lastIndication2" name="lastIndication" value="1574" readonly>
+                        <input class="form-input" id="lastIndication2" name="lastIndication" value="1574" readonly>
                       </div>
-                      <div class="indication-field">
+                      <div class="indication-field form-field">
                         <label for="newIndication2">Новое <br> показание</label>
-                        <input class="indication-input" id="newIndication2" name="newIndication" value="1574">
+                        <input class="form-input" id="newIndication2" name="newIndication" value="1574">
                       </div>
                     </div>
                   </div>
@@ -171,26 +177,26 @@
                   <div class="indication-item">
                     <span class="indication-name cold-water">Холодное водоснабжение</span>
                     <div class="indication-field-wrapper">
-                      <div class="indication-field">
+                      <div class="indication-field form-field">
                         <label for="lastIndication3">Последнее показание (27.06.2020)</label>
-                        <input class="indication-input" id="lastIndication3" name="lastIndication" value="1574" readonly>
+                        <input class="form-input" id="lastIndication3" name="lastIndication" value="1574" readonly>
                       </div>
-                      <div class="indication-field">
+                      <div class="indication-field form-field">
                         <label for="newIndication3">Новое <br> показание</label>
-                        <input class="indication-input" id="newIndication3" name="newIndication" value="1574">
+                        <input class="form-input" id="newIndication3" name="newIndication" value="1574">
                       </div>
                     </div>
                   </div>
                   <div class="indication-item">
                     <span class="indication-name hot-water">Горячее водоснабжение</span>
                     <div class="indication-field-wrapper">
-                      <div class="indication-field">
+                      <div class="indication-field form-field">
                         <label for="lastIndication4">Последнее показание (27.06.2020)</label>
-                        <input class="indication-input" id="lastIndication4" name="lastIndication" value="1574" readonly>
+                        <input class="form-input" id="lastIndication4" name="lastIndication" value="1574" readonly>
                       </div>
-                      <div class="indication-field">
+                      <div class="indication-field form-field">
                         <label for="newIndication4">Новое <br> показание</label>
-                        <input class="indication-input" id="newIndication4" name="newIndication" value="1574">
+                        <input class="form-input" id="newIndication4" name="newIndication" value="1574">
                       </div>
                     </div>
                   </div>
@@ -203,31 +209,178 @@
                   <div class="indication-item">
                     <span class="indication-name electricity">Электроэнергия (день)</span>
                     <div class="indication-field-wrapper">
-                      <div class="indication-field">
+                      <div class="indication-field form-field">
                         <label for="lastIndication5">Последнее показание (27.06.2020)</label>
-                        <input class="indication-input" id="lastIndication5" name="lastIndication" value="1574" readonly>
+                        <input class="form-input" id="lastIndication5" name="lastIndication" value="1574" readonly>
                       </div>
-                      <div class="indication-field">
+                      <div class="indication-field form-field">
                         <label for="newIndication5">Новое <br> показание</label>
-                        <input class="indication-input" id="newIndication5" name="newIndication" value="1574">
+                        <input class="form-input" id="newIndication5" name="newIndication" value="1574">
                       </div>
                     </div>
                   </div>
                   <div class="indication-item">
                     <span class="indication-name electricity">Электроэнергия (ночь)</span>
                     <div class="indication-field-wrapper">
-                      <div class="indication-field">
+                      <div class="indication-field form-field">
                         <label for="lastIndication6">Последнее показание (27.06.2020)</label>
-                        <input class="indication-input" id="lastIndication6" name="lastIndication" value="1574" readonly>
+                        <input class="form-input" id="lastIndication6" name="lastIndication" value="1574" readonly>
                       </div>
-                      <div class="indication-field">
+                      <div class="indication-field form-field">
                         <label for="newIndication6">Новое <br> показание</label>
-                        <input class="indication-input" id="newIndication6" name="newIndication" value="1574">
+                        <input class="form-input" id="newIndication6" name="newIndication" value="1574">
                       </div>
                     </div>
                   </div>
                   <button class="indication-btn-send" type="submit">Отправить</button>
                 </form>
+              </div>
+            </div>
+          </section>
+
+          <!-- Мои услуги -->
+          <section class="my-services" id="section3">
+            <h2 class="block-title">Быстрая оплата</h2>
+            <div class="my-service-list">
+              <div class="my-service-item">
+                <b class="my-service-name">Коммунальные услуги РИЦ Димитровград</b>
+                <div class="my-service-block">
+                  <table class="my-service-table">
+                    <thead>
+                      <tr>
+                        <th class="my-service-account-head">Абонентский номер</th>
+                        <th class="my-service-indication-head">Показания приборов учета</th>
+                        <th class="my-service-period-head">Период</th>
+                        <th class="my-service-debt-head">Текущая задолжность</th>
+                        <th class="my-service-accrued-head">Начислено</th>
+                        <th class="my-service-pay-head">Оплатить</th>
+                        <th class="my-service-commission-head">Комиссия</th>
+                        <th class="my-service-total-head">К оплате</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="my-service-account">
+                          <span>879456879</span>
+                          <p>Димитровград, Московская ул., 44. 70</p>
+                        </td>
+                        <td class="my-service-indication">
+                          <div class="form-field my-service-water cold">
+                            <label for="coldWaterIndication1" title="Холодное водоснабжение">ХВС</label>
+                            <input class="form-input" id="coldWaterIndication1" type="text" value="1574">
+                          </div>
+                          <div class="form-field my-service-water hot">
+                            <label for="hotWaterIndication1" title="Горячее водоснабжение">ГВС</label>
+                            <input class="form-input" id="hotWaterIndication1" type="text" value="1574">
+                          </div>
+                        </td>
+                        <td class="my-service-period">
+                          июнь 2020
+                        </td>
+                        <td class="my-service-debt">
+                          3231.31 р.
+                        </td>
+                        <td class="my-service-accrued">
+                          2244.33 р.
+                        </td>
+                        <td class="my-service-pay">
+                          <div class="form-field">
+                            <input class="form-input" id="MyServiceToPay" type="text" value="1574" aria-label="Оплатить">
+                          </div>
+                        </td>
+                        <td class="my-service-commission">
+                          0 р.
+                        </td>
+                        <td class="my-service-total">
+                          2244.33 р.
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <div class="my-service-block-bottom">
+                    <p class="my-service-block-note">
+                      *Чтобы узнать задолженность с учетом показаний, введите новые показания и нажмите кнопку "РАССЧИТАТЬ"
+                    </p>
+                    <div class="my-service-btn-wrapper">
+                      <button class="my-service-template-btn clear" type="button">Удалить шаблон</button>
+                      <button class="my-service-template-btn calculate" type="button">Рассчитать</button>
+                    </div>
+                    <div class="my-service-btn-wrapper">
+                      <a href="#" class="my-service-btn pay">Оплатить</a>
+                      <a href="#" class="my-service-btn basket">В корзину</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="my-service-item">
+                <b class="my-service-name">Коммунальные услуги РИЦ Димитровград</b>
+                <div class="my-service-block">
+                  <table class="my-service-table">
+                    <thead>
+                      <tr>
+                        <th class="my-service-account-head">Абонентский номер</th>
+                        <th class="my-service-indication-head">Показания приборов учета</th>
+                        <th class="my-service-period-head">Период</th>
+                        <th class="my-service-debt-head">Текущая задолжность</th>
+                        <th class="my-service-accrued-head">Начислено</th>
+                        <th class="my-service-pay-head">Оплатить</th>
+                        <th class="my-service-commission-head">Комиссия</th>
+                        <th class="my-service-total-head">К оплате</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="my-service-account">
+                          <span>879456879</span>
+                          <p>Димитровград, Московская ул., 44. 70</p>
+                        </td>
+                        <td class="my-service-indication">
+                          <div class="form-field my-service-water cold">
+                            <label for="coldWaterIndication2" title="Холодное водоснабжение">ХВС</label>
+                            <input class="form-input" id="coldWaterIndication2" type="text" value="1574">
+                          </div>
+                          <div class="form-field my-service-water hot">
+                            <label for="hotWaterIndication2" title="Горячее водоснабжение">ГВС</label>
+                            <input class="form-input" id="hotWaterIndication2" type="text" value="1574">
+                          </div>
+                        </td>
+                        <td class="my-service-period">
+                          июнь 2020
+                        </td>
+                        <td class="my-service-debt">
+                          3231.31 р.
+                        </td>
+                        <td class="my-service-accrued">
+                          2244.33 р.
+                        </td>
+                        <td class="my-service-pay">
+                          <div class="form-field">
+                            <input class="form-input" id="MyServiceToPay1" type="text" value="1574" aria-label="Оплатить">
+                          </div>
+                        </td>
+                        <td class="my-service-commission">
+                          0 р.
+                        </td>
+                        <td class="my-service-total">
+                          2244.33 р.
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <div class="my-service-block-bottom">
+                    <p class="my-service-block-note">
+                      *Чтобы узнать задолженность с учетом показаний, введите новые показания и нажмите кнопку "РАССЧИТАТЬ"
+                    </p>
+                    <div class="my-service-btn-wrapper">
+                      <button class="my-service-template-btn clear" type="button">Удалить шаблон</button>
+                      <button class="my-service-template-btn calculate" type="button">Рассчитать</button>
+                    </div>
+                    <div class="my-service-btn-wrapper">
+                      <a href="#" class="my-service-btn pay">Оплатить</a>
+                      <a href="#" class="my-service-btn basket">В корзину</a>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </section>

@@ -1,0 +1,46 @@
+.modal {
+  position: fixed;
+  top: calc(50% - (388px/2));
+  left: calc(50% - (864px/2));
+  z-index: 102;
+
+  padding: 40px 44px;
+  width: 864px;
+  height: 388px;
+
+  background-color: #ffffff;
+  box-shadow: 0px 15px 18px #003A9E33;
+  border-radius: 20px;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.modal.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal-name {
+  margin: 0 0 30px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+
+  padding: 0;
+  width: 21px;
+  height: 21px;
+
+  border: none;
+  outline: none;
+  background-color: transparent;
+
+  cursor: pointer;
+}
+
+.modal-close:hover svg .b,
+.modal-close:focus svg .b {
+  fill: #47a9ff;
+}

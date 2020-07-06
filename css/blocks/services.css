@@ -54,6 +54,157 @@
   background-image: url("../../img/services/icon-all-services.svg");
 }
 
+/* Страница услуги */
+.card-add-order {
+  background-color: #F86512;
+  background-image: url('../../img/services/icon-add.svg');
+  box-shadow: 0px 10px 30px #F8651233;
+  border-color: #F86512;
+}
+
+.card-add-order .card-name,
+.card-executor .card-name {
+  color: #ffffff;
+}
+
+.card-executor {
+  background-color: #47A9FF;
+  background-image: url('../../img/services/icon-hammer.svg');
+  border-color: #47A9FF;
+}
+
+.card-executor:hover {
+  border-color: #F86512;
+}
+
+/* Модальное окно создать заказ */
+.add-order-form {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+.add-order-field {
+  display: flex;
+  flex-direction: column;
+  width: 474px;
+}
+
+.add-order-field .form-textarea {
+  margin-top: auto;
+  height: 181px;
+}
+
+.add-order-settings {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 36px;
+}
+
+.add-order-service-name {
+  display: flex;
+  align-items: center;
+  padding-left: 32px;
+
+  font-size: 16px;
+  line-height: 24px;
+  color: #003A9E;
+  font-weight: 700;
+
+  border: none;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 24px;
+  outline: none;
+}
+
+.add-order-service-plumping-work {
+  background-image: url("../../img/services/icon-plumbing-work.svg");
+}
+
+.add-order-service-name-list {
+  position: absolute;
+  top: 30px;
+  z-index: 103;
+
+  margin: 0;
+  padding: 0;
+
+  background-color: #ffffff;
+  box-shadow: 0px 10px 30px #2F83DE33;
+
+  list-style: none;
+  visibility: hidden;
+}
+
+.add-order-service-name-list.show {
+  visibility: visible;
+}
+
+.add-order-dropdown-btn {
+  position: relative;
+  padding: 0 23px 0 32px;
+
+  cursor: pointer;
+}
+
+.add-order-setting-list {
+  margin: 35px 0 0 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.add-order-setting-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.add-order-setting-item > * {
+  padding: 0;
+}
+
+.add-order-setting-item > *,
+.add-order-setting-item .dropdown-main-btn {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 30px;
+  color: #4E57AA;
+  text-decoration: underline;
+
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.add-order-setting-item-remove {
+  display: inline-block;
+  width: 21px;
+  height: 21px;
+  margin-left: 5px;
+
+  background: url("../../img/services/cross.svg");
+}
+
+.add-order-btn {
+  width: 138px;
+  padding: 11px 20px;
+  margin-top: auto;
+
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  color: #ffffff;
+
+  background-color: #F86512;
+  box-shadow: 0px 15px 20px #F865121A;
+  border-radius: 10px;
+  border: none;
+}
+
 /* min-width: 1220px */
 @media screen and (max-width: 1549px) {
   /* Услуги на главной */

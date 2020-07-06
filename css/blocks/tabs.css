@@ -5,12 +5,19 @@
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: 32px 0 0 34px;
+  padding: 0;
+
+  list-style: none;
+}
+
+.tabs li {
+  margin: 0 20px 20px 0;
 }
 
 .tab-item {
+  display: inline-block;
   width: 163px;
   padding: 7px 10px;
-  margin: 0 20px 20px 0;
 
   font-size: 16px;
   font-weight: 700;
@@ -29,7 +36,7 @@
 
 .tab-item:hover,
 .tab-item:focus,
-.tab-item.active {
+.tab-item[aria-selected] {
   color: #F86512;
 
   border-color: #CBE7FF;
